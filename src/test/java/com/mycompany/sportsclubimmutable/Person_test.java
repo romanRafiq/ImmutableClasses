@@ -47,7 +47,7 @@ public class Person_test {
         //Test objects aren't the same
        person = new Person( 900125,"Rafiq","Roman",convertDate("1990-03-25"));
        
-        Assert.assertNotSame(person,person.getID(),"The Objects are the same");            
+        Assert.assertNotSame(person,person.updateName("Taariq"),"The Objects are the same");            
    }
     
     @Test
