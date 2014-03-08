@@ -25,7 +25,7 @@ public final class Sport_Fixtures {
     public Sport_Fixtures(Date date,String division,int age_group,String opponents,String status,String sportType)            
     {
         this.date = date;
-        this.opponents = division;
+        this.division = division;
         this.age_group = age_group;
         this.opponents = opponents;
         this.status = status;
