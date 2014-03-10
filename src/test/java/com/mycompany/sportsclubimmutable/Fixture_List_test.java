@@ -7,8 +7,8 @@ package com.mycompany.sportsclubimmutable;
  */
 
 
-import com.Interfaces.classes.ImmutableClasses.Fixture_List;
-import com.Interfaces.classes.ImmutableClasses.Sport_Fixtures;
+import com.Model.classes.ImmutableClasses.Fixture_List;
+import com.Model.classes.ImmutableClasses.Sport_Fixtures;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;

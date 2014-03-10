@@ -8,7 +8,7 @@ package com.mycompany.sportsclubimmutable.Employees;
 
 
 
-import com.Interfaces.classes.ImmutableClasses.Employees.Coach;
+import com.Model.classes.ImmutableClasses.Employees.Coach;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.testng.Assert;

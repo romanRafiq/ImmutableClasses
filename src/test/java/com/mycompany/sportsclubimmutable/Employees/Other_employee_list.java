@@ -8,8 +8,8 @@ package com.mycompany.sportsclubimmutable.Employees;
 
 
 
-import com.Interfaces.classes.ImmutableClasses.Employees.OtherEmployeeList;
-import com.Interfaces.classes.ImmutableClasses.Employees.Other_Employees;
+import com.Model.classes.ImmutableClasses.Employees.OtherEmployeeList;
+import com.Model.classes.ImmutableClasses.Employees.Other_Employees;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;

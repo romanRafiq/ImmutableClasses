@@ -7,7 +7,7 @@ package com.mycompany.sportsclubimmutable;
  */
 
 
-import com.Interfaces.classes.ImmutableClasses.Sport_Fixtures;
+import com.Model.classes.ImmutableClasses.Sport_Fixtures;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.testng.Assert;

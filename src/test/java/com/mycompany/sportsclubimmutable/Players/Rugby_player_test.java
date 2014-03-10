@@ -6,7 +6,7 @@
 
 package com.mycompany.sportsclubimmutable.Players;
 
-import com.Interfaces.classes.ImmutableClasses.Players.Rugby_player;
+import com.Model.classes.ImmutableClasses.Players.Rugby_player;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.testng.Assert;

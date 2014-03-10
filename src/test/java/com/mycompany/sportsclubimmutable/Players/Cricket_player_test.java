@@ -6,7 +6,7 @@
 
 package com.mycompany.sportsclubimmutable.Players;
 
-import com.Interfaces.classes.ImmutableClasses.Players.Cricket_player;
+import com.Model.classes.ImmutableClasses.Players.Cricket_player;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

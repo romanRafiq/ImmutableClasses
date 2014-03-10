@@ -7,8 +7,8 @@
 package com.mycompany.sportsclubimmutable.PlayerList;
 
 
-import com.Interfaces.classes.ImmutableClasses.Player_Lists.Rugby_list;
-import com.Interfaces.classes.ImmutableClasses.Players.Rugby_player;
+import com.Model.classes.ImmutableClasses.Player_Lists.Rugby_list;
+import com.Model.classes.ImmutableClasses.Players.Rugby_player;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;

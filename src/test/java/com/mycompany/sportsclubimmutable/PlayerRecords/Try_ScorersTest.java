@@ -6,7 +6,7 @@ package com.mycompany.sportsclubimmutable.PlayerRecords;
  * and open the template in the editor.
  */
 
-import com.Interfaces.classes.ImmutableClasses.PlayerRecords.Try_Scorers;
+import com.Model.classes.ImmutableClasses.PlayerRecords.Try_Scorers;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
