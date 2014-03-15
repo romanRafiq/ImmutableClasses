@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 
-package com.Services.Cruds.Impl;
+package com.Services.Impl.Employees;
 
 
-import com.Model.classes.ImmutableClasses.Employees.Other_Employees;
-import com.Services.Cruds.Other_employeesCrudService;
+import com.Services.crud.Employees.CoachCrudSerice;
+import com.Model.classes.ImmutableClasses.Employees.Coach;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,29 +19,33 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author Roman
  */
-public class EmployeesCrudService implements Other_employeesCrudService {
+public class CoachCrudServiceImpl implements CoachCrudSerice {
 
-     @Override
-    @SuppressWarnings("unchecked")
-    @Transactional(propagation = Propagation.SUPPORTS)   
-    public Other_Employees find(String id) {
-         return (Other_Employees) this.find(id);
-    }
-
+    
+     
     @Override
+    @SuppressWarnings("unchecked")
+    @Transactional(propagation = Propagation.SUPPORTS)    
+    public Coach find(String id) {
+      return (Coach) this.find(id);
+    }
+    
+  @Override    
     @Transactional(propagation = Propagation.MANDATORY)
-    public Other_Employees persist(Other_Employees entity) {
+    public Coach persist(Coach entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
      @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public Other_Employees merge(Other_Employees entity) {
+    public Coach merge(Coach entity) {
+       
+      
         if (entity == null) {            
              try {
                  throw new Exception();
              } catch (Exception ex) {
-                 Logger.getLogger(EmployeesCrudService.class.getName()).log(Level.SEVERE, null, ex);
+                 Logger.getLogger(CoachCrudServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
              }
         }
                
@@ -49,13 +53,13 @@ public class EmployeesCrudService implements Other_employeesCrudService {
     }
 
     @Override
-    public Other_Employees remove(Other_Employees entity) {
-       return null;
+    public Coach remove(Coach entity) {
+        return null;
     }
 
     @Override
-    public List<Other_Employees> findAll() {
-        return null;
+    public List<Coach> findAll() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

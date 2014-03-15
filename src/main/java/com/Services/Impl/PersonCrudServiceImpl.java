@@ -4,17 +4,15 @@
  * and open the template in the editor.
  */
 
-package com.Services.Cruds.Impl;
-
+package com.Services.crud.Impl;
 
 import com.Model.classes.ImmutableClasses.Person;
-import com.Services.Cruds.PersonCrudService;
+import com.Services.crud.PersonCrudService;
+
+
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
-
 
 public class PersonCrudServiceImpl implements PersonCrudService {
      

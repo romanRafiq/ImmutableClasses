@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package com.Services.Cruds;
+package com.Services.crud.SportRecords;
 
-import com.Model.classes.ImmutableClasses.Employees.Coach;
+import com.Model.classes.ImmutableClasses.Sport_records.Rugby_Records;
 import com.Services.CrudService;
 
 
@@ -14,6 +14,6 @@ import com.Services.CrudService;
  *
  * @author Roman
  */
-public interface CoachCrudSerice extends CrudService<Coach,String>{
+public interface RugbyRecords_Crud extends CrudService<Rugby_Records,String>{
     
 }

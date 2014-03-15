@@ -4,17 +4,16 @@
  * and open the template in the editor.
  */
 
-package com.Services.Cruds;
+package com.Services.crud.PlayerRecords;
 
-import com.Model.classes.ImmutableClasses.Person;
+import com.Model.classes.ImmutableClasses.PlayerRecords.Batsman_runs;
 import com.Services.CrudService;
-
 
 
 /**
  *
  * @author Roman
  */
-public interface PersonCrudService extends CrudService<Person,String>{
+public interface BatsmansRuns_CrudService extends CrudService<Batsman_runs,String>{
     
 }

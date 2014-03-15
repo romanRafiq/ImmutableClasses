@@ -4,17 +4,16 @@
  * and open the template in the editor.
  */
 
-package com.Services.Cruds;
+package com.Services.crud.PlayerRecords;
 
-import com.Model.classes.ImmutableClasses.Employees.Other_Employees;
+import com.Model.classes.ImmutableClasses.PlayerRecords.BowlerWickets;
 import com.Services.CrudService;
-
 
 
 /**
  *
  * @author Roman
  */
-public interface Other_employeesCrudService extends CrudService<Other_Employees,String>{
+public interface BowlerCrud_service extends CrudService<BowlerWickets,String>{
     
 }
