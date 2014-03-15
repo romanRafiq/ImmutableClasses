@@ -41,7 +41,7 @@ public class Coach_List_test {
         coach_list coach_list_Obj = new coach_list(Coaches);
         
         //Object To be added
-       Coach coach = new Coach( 900125,"Lester","Nesta",convertDate("1990-01-10"), "Cricket","A", 21);   
+       Coach coach = new Coach( "900125","Lester","Nesta",convertDate("1990-01-10"), "Cricket","A", 21);   
        
        
        //Size is zero

@@ -37,7 +37,7 @@ public class Cricket_player_test {
     @Test
     public void testImmutable() {     
         
-        player = new Cricket_player( 900125,"Imo","Sturks",convertDate("1990-01-10"), "A", 21, "right");
+        player = new Cricket_player( "900125","Imo","Sturks",convertDate("1990-01-10"), "A", 21, "right");
         
         //Test the object was created
         Assert.assertEquals(player.getName(),"Imo","Error names werent the same"); 
@@ -48,7 +48,7 @@ public class Cricket_player_test {
     @Test
     public void ObjectsAreNotTheSame() {                
         //Test objects aren't the same
-       player = new Cricket_player( 900125,"Imo","Sturks",convertDate("1990-04-23"), "A", 21, "right");
+       player = new Cricket_player( "900125","Imo","Sturks",convertDate("1990-04-23"), "A", 21, "right");
         Assert.assertNotSame(player,player.updateDivision("B"),"The Objects are the same");            
    }
     
@@ -58,7 +58,7 @@ public class Cricket_player_test {
         //Confirming that these objects are different
         //The Object is not updated or modified but a new object was returned
         
-      player = new Cricket_player( 900125,"Imo","Sturks",convertDate("1990-09-23"), "A", 21, "right");
+      player = new Cricket_player( "900125","Imo","Sturks",convertDate("1990-09-23"), "A", 21, "right");
                                  
         /********  Get  HashCode   *****************/        
         //return hascode as a string the is an easy way of doing this

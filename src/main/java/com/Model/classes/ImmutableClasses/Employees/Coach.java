@@ -19,7 +19,7 @@ public final class Coach extends Person{
     private String division;
     private int age_group;
     
-    public Coach(int idNumber, String name, String surname, Date DoB,String sport, String division,int age_group) {
+    public Coach(String idNumber, String name, String surname, Date DoB,String sport, String division,int age_group) {
         super(idNumber, name, surname, DoB);
         
         this.sport = sport;

@@ -20,7 +20,7 @@ public final class Rugby_player extends Person{
     private String position;
     
     //Constructed
-    public Rugby_player(int idNumber, String name, String surname, Date DoB,String  division,int age_group,String position) {
+    public Rugby_player(String idNumber, String name, String surname, Date DoB,String  division,int age_group,String position) {
         
         super(idNumber, name, surname, DoB);
         this.division = division;

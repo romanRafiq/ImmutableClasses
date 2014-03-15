@@ -36,7 +36,7 @@ public class Other_Employee_test {
       @Test
     public void testImmutable() {     
         
-        other_employee = new Other_Employees( 900125,"Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
+        other_employee = new Other_Employees( "900125","Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
         
         
         //Test the object was created
@@ -48,7 +48,7 @@ public class Other_Employee_test {
     @Test
     public void ObjectsAreNotTheSame() {                
         //Test objects aren't the same
-       other_employee = new Other_Employees( 900125,"Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
+       other_employee = new Other_Employees( "900125","Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
         Assert.assertNotSame(other_employee,other_employee.updateName("Nefta"),"The Objects are the same");            
    }
     
@@ -58,7 +58,7 @@ public class Other_Employee_test {
         //Confirming that these objects are different
         //The Object is not updated or modified but a new object was returned
         
-      other_employee = new Other_Employees( 900125,"Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
+      other_employee = new Other_Employees( "900125","Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
                                  
         /********  Get  HashCode   *****************/        
         //return hascode as a string the is an easy way of doing this

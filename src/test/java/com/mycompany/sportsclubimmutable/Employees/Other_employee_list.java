@@ -42,7 +42,7 @@ public class Other_employee_list {
         OtherEmployeeList Other_Emp_list_Obj = new OtherEmployeeList(other_employees);
         
         //Object To be added
-       Other_Employees empObj = new Other_Employees( 900125,"Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
+       Other_Employees empObj = new Other_Employees( "900125","Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
        
        
        //Size is zero

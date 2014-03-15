@@ -23,7 +23,7 @@ public final class Soccer_player extends Person{
     private String preferred_Foot;
     
     
-    public Soccer_player(int idNumber, String name, String surname, Date DoB, String division,int age_group,String position,String preferred_Foot)
+    public Soccer_player(String idNumber, String name, String surname, Date DoB, String division,int age_group,String position,String preferred_Foot)
         {
         super(idNumber, name, surname, DoB);
         

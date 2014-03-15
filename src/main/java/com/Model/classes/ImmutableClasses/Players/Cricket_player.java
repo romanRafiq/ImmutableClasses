@@ -18,7 +18,7 @@ public final class Cricket_player extends Person{
     private int age_group;
     private String handed;
     
-    public Cricket_player(int idNumber, String name, String surname, Date DoB,String division,int age_group,String handed) {
+    public Cricket_player(String idNumber, String name, String surname, Date DoB,String division,int age_group,String handed) {
         super(idNumber, name, surname, DoB);
         
     this.division = division;

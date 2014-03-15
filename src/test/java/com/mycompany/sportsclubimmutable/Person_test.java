@@ -34,7 +34,7 @@ public class Person_test {
     @Test
     public void testImmutable() {     
         
-        person = new Person( 900125,"Rafiq","Roman",convertDate("1990-03-25"));
+        person = new Person( "900125","Rafiq","Roman",convertDate("1990-03-25"));
         
         //Test the object was created
         Assert.assertEquals(person.getName(),"Rafiq","Error names werent the same"); 
@@ -45,7 +45,7 @@ public class Person_test {
     @Test
     public void ObjectsAreNotTheSame() {                
         //Test objects aren't the same
-       person = new Person( 900125,"Rafiq","Roman",convertDate("1990-03-25"));
+       person = new Person( "900125","Rafiq","Roman",convertDate("1990-03-25"));
        
         Assert.assertNotSame(person,person.updateName("Taariq"),"The Objects are the same");            
    }
@@ -56,7 +56,7 @@ public class Person_test {
         //Confirming that these objects are different
         //The Object is not updated or modified but a new object was returned
         
-      person = new Person( 900125,"Rafiq","Roman",convertDate("1990-03-25"));
+      person = new Person( "900125","Rafiq","Roman",convertDate("1990-03-25"));
                                  
         /********  Get  HashCode   *****************/        
         //return hascode as a string the is an easy way of doing this

@@ -20,7 +20,7 @@ public final class Other_Employees extends Person{
     private String postion;
     private String job_description;
     
-    public Other_Employees(int idNumber, String name, String surname, Date DoB,int emp_id,String postion,String job_description) {
+    public Other_Employees(String idNumber, String name, String surname, Date DoB,int emp_id,String postion,String job_description) {
         super(idNumber, name, surname, DoB);
         
       this.emp_id = emp_id;
