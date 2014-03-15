@@ -64,22 +64,20 @@ public class Batsmans_CrudTest {
         Batsman_runs player = new Batsman_runs( "Rafiq","Samsodien",5,50);
                  
         when(crudService.merge(player)).thenReturn(player);
-        System.out.println("Person::::  "+player); 
+      
         Batsman_runs returnObject = crudService.merge(player);  
         
         
-        System.out.println("Return::::  "+returnObject); 
+        
         Mockito.verify(crudService).merge(player);        
         //////////////////////////////////////////////////////
         Batsman_runs updated =  player.updateGamesPlayed(6);
-         System.out.println("Update "+updated);          
+   
          
          when(crudService.merge(updated)).thenReturn(player);
         
          Batsman_runs returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-        System.out.println("Update2 "+updated); 
+      
       
         Assert.assertNotSame(returned,updated);
                 

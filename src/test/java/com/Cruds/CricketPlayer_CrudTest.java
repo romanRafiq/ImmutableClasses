@@ -73,25 +73,20 @@ public class CricketPlayer_CrudTest {
         Cricket_player player = new Cricket_player( "900125","Imo","Sturks",convertDate("1990-01-10"), "A", 21, "right");
                  
         when(crudService.merge(player)).thenReturn(player);
-        System.out.println("Person::::  "+player); 
+        
         Cricket_player returnObject = crudService.merge(player);  
         
         
-        System.out.println("Return::::  "+returnObject); 
+        
         Mockito.verify(crudService).merge(player);        
         //////////////////////////////////////////////////////
         Cricket_player updated =  player.updateAgeGroup(19);
-         System.out.println("Update "+updated);          
+        
          
          when(crudService.merge(updated)).thenReturn(player);
         
          Cricket_player returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
         
-        System.out.println("Update2 "+updated); 
-      /*  Mockito.verify(crudService).merge(updated);
-        Mockito.verifyNoMoreInteractions(crudService);
-       */
         Assert.assertNotSame(returned,updated);
                 
     }

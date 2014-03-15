@@ -75,22 +75,18 @@ public class RugbyRecord_CrudTest {
         Rugby_Records team = new Rugby_Records( "A","17",8,9,2);
                  
         when(crudService.merge(team)).thenReturn(team);
-        System.out.println("Person::::  "+team); 
+        
         Rugby_Records returnObject = crudService.merge(team);  
         
-        
-        System.out.println("Return::::  "+returnObject); 
+                
         Mockito.verify(crudService).merge(team);        
         //////////////////////////////////////////////////////
         Rugby_Records updated =  team.updateWins(19);
-         System.out.println("Update "+updated);          
          
          when(crudService.merge(updated)).thenReturn(team);
         
          Rugby_Records returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
         
-        System.out.println("Update2 "+updated); 
       
         Assert.assertNotSame(returned,updated);
                 

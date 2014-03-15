@@ -70,25 +70,20 @@ public class TetCoachCrud {
         Coach coach = new Coach( "900125","Rafiq","Roman",convertDate("1990-03-25"), "Cricket","A", 21);
                  
         when(crudService.merge(coach)).thenReturn(coach);
-        System.out.println("Person::::  "+coach); 
+       
         Coach returnObject = crudService.merge(coach);  
         
         
-        System.out.println("Return::::  "+returnObject); 
+       
         Mockito.verify(crudService).merge(coach);        
         //////////////////////////////////////////////////////
         Coach updated = coach.updateAgeGroup(21);
-         System.out.println("Update "+updated);          
+         
          
          when(crudService.merge(updated)).thenReturn(coach);
         
          Coach returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
         
-        System.out.println("Update2 "+updated); 
-      /*  Mockito.verify(crudService).merge(updated);
-        Mockito.verifyNoMoreInteractions(crudService);
-       */
         Assert.assertNotSame(returned,updated);
                 
     }

@@ -75,25 +75,20 @@ public class GoalScorer_CrudTest {
         goal_Scorers player = new goal_Scorers("Rafiq","Roman",5,20);
                  
         when(crudService.merge(player)).thenReturn(player);
-        System.out.println("Person::::  "+player); 
+       
         goal_Scorers returnObject = crudService.merge(player);  
         
-        
-        System.out.println("Return::::  "+returnObject); 
+               
         Mockito.verify(crudService).merge(player);        
         //////////////////////////////////////////////////////
         goal_Scorers updated =  player.updateGoals(25);
-         System.out.println("Update "+updated);          
+        
          
          when(crudService.merge(updated)).thenReturn(player);
         
          goal_Scorers returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
         
-        System.out.println("Update2 "+updated); 
-      /*  Mockito.verify(crudService).merge(updated);
-        Mockito.verifyNoMoreInteractions(crudService);
-       */
+         
         Assert.assertNotSame(returned,updated);
                 
     }

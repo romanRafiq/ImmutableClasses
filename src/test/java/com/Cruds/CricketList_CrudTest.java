@@ -61,52 +61,7 @@ public class CricketList_CrudTest {
       
     }
 
-  /*  
-   @Test
-    public void testRead() throws Exception {
-        Soccer_player  player = new Soccer_player( "900125","Fiki","Roman",convertDate("1990-01-10"), "A", 23, "Striker","Right"); 
-        Soccer_player returnObject = crudService.find(player.getID());
-                
-        when(crudService.find(player.getID())).thenReturn(returnObject);
-        Mockito.verify(crudService).find(player.getID());              
-    }
-
-    
-    @Test
-    public void testUpdate() throws Exception {
-     
-        Soccer_player player = new Soccer_player( "900125","Fiki","Roman",convertDate("1990-01-10"), "A", 23, "Striker","Right"); 
-                 
-        when(crudService.merge(player)).thenReturn(player);
-        System.out.println("Person::::  "+player); 
-        Soccer_player returnObject = crudService.merge(player);  
-        
-        
-        System.out.println("Return::::  "+returnObject); 
-        Mockito.verify(crudService).merge(player);        
-        //////////////////////////////////////////////////////
-        Soccer_player updated =  player.updateAgeGroup(19);
-         System.out.println("Update "+updated);          
-         
-         when(crudService.merge(updated)).thenReturn(player);
-        
-         Soccer_player returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-      
-        Assert.assertNotSame(returned,updated);
-                
-    }*/
-    
-   /* @Test
-    public void testDelete() throws Exception {
-
-        Soccer_player player = new  Soccer_player( "900125","Fiki","Roman",convertDate("1990-01-10"), "A", 23, "Striker","Right"); 
-        Soccer_player returnObject = crudService.remove(player);
-        when(crudService.remove(player)).thenReturn(returnObject);
-        Mockito.verify(crudService).remove(player);
-
-    }*/
+ 
 	
 	 public Date convertDate(String strDate)
     {

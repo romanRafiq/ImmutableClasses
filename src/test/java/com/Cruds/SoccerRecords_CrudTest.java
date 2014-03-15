@@ -76,23 +76,18 @@ public class SoccerRecords_CrudTest {
         Soccer_records team = new Soccer_records( "A","17",8,9,2);
                  
         when(crudService.merge(team)).thenReturn(team);
-        System.out.println("Person::::  "+team); 
+       
         Soccer_records returnObject = crudService.merge(team);  
         
-        
-        System.out.println("Return::::  "+returnObject); 
+       
         Mockito.verify(crudService).merge(team);        
         //////////////////////////////////////////////////////
         Soccer_records updated =  team.updateLoses(19);
-         System.out.println("Update "+updated);          
-         
+       
          when(crudService.merge(updated)).thenReturn(team);
         
         Soccer_records returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-        System.out.println("Update2 "+updated); 
-      
+       
         Assert.assertNotSame(returned,updated);
                 
     }

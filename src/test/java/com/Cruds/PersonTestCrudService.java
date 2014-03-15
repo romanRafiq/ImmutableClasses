@@ -77,25 +77,18 @@ public class PersonTestCrudService {
         Person person = new Person( "900125","Rafiq","Roman",convertDate("1990-03-25"));
                  
         when(crudService.merge(person)).thenReturn(person);
-        System.out.println("Person::::  "+person); 
+       
         Person returnObject = crudService.merge(person);  
         
-        
-        System.out.println("Return::::  "+returnObject); 
+       
         Mockito.verify(crudService).merge(person);        
         //////////////////////////////////////////////////////
         Person updated = person.updateSurname("Awesome");
-         System.out.println("Update "+updated);          
-         
+       
          when(crudService.merge(updated)).thenReturn(person);
         
          Person returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-        System.out.println("Update2 "+updated); 
-      /*  Mockito.verify(crudService).merge(updated);
-        Mockito.verifyNoMoreInteractions(crudService);
-       */
+       
         Assert.assertNotSame(returned,updated);
                 
     }

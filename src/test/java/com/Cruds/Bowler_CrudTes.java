@@ -73,22 +73,20 @@ public class Bowler_CrudTes {
         BowlerWickets player = new BowlerWickets("Tatum","Love",10,20);
                  
         when(crudService.merge(player)).thenReturn(player);
-        System.out.println("Person::::  "+player); 
+       
         BowlerWickets returnObject = crudService.merge(player);  
         
         
-        System.out.println("Return::::  "+returnObject); 
+       
         Mockito.verify(crudService).merge(player);        
         //////////////////////////////////////////////////////
         BowlerWickets updated =  player.updateWickets(19);
-         System.out.println("Update "+updated);          
+       
          
          when(crudService.merge(updated)).thenReturn(player);
         
          BowlerWickets returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-        System.out.println("Update2 "+updated); 
+       
       
         Assert.assertNotSame(returned,updated);
                 

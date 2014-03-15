@@ -69,25 +69,18 @@ public class TestEmployeeCrud {
         Other_Employees employee = new Other_Employees( "900125","Eesa","Abrahams",convertDate("1990-01-10"),900231,"Admin","Secetary");
                  
         when(crudService.merge(employee)).thenReturn(employee);
-        System.out.println("Person::::  "+employee); 
+       
         Other_Employees returnObject = crudService.merge(employee);  
         
         
-        System.out.println("Return::::  "+returnObject); 
         Mockito.verify(crudService).merge(employee);        
         //////////////////////////////////////////////////////
         Other_Employees updated = employee.changeJobDescription("Cleaner");
-         System.out.println("Update "+updated);          
-         
+        
          when(crudService.merge(updated)).thenReturn(employee);
         
          Other_Employees returned = crudService.merge(updated);
-        System.out.println("Return: "+returned);  
-        
-        System.out.println("Update2 "+updated); 
-      /*  Mockito.verify(crudService).merge(updated);
-        Mockito.verifyNoMoreInteractions(crudService);
-       */
+       
         Assert.assertNotSame(returned,updated);
                 
     }
