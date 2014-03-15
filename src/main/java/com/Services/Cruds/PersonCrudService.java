@@ -4,19 +4,17 @@
  * and open the template in the editor.
  */
 
-package com.Model.Interfaces;
+package com.Services.Cruds;
 
-import java.util.Date;
+import com.Model.classes.ImmutableClasses.Person;
+import com.Services.CrudService;
+
+
 
 /**
  *
  * @author Roman
  */
-public interface PersonInterface {
+public interface PersonCrudService extends CrudService<Person,String>{
     
-    public String getID();  
-    public Date getDOB();
-    public String getName();
-    public String getSurname();    
-        
 }

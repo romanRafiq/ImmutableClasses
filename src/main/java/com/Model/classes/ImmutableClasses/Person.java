@@ -16,12 +16,20 @@ import java.util.Date;
  */
 public  class Person implements PersonInterface{
    
-    private int idNumber;
+    private String idNumber;
     private String name;            
     private String surname;
     private Date DoB;
     
-    public Person(int idNumber,String name, String surname,Date DoB)
+     public Person(Person person)
+    {
+        this.idNumber = person.idNumber;
+        this.name = person.name;            
+        this.surname = person.surname;
+        this.DoB = person.DoB;
+        
+    }
+    public Person(String idNumber,String name, String surname,Date DoB)
     {
         this.idNumber = idNumber;
         this.name = name;            
@@ -43,7 +51,7 @@ public  class Person implements PersonInterface{
      
     
     @Override
-    public int getID() {
+    public String getID() {
         return idNumber;
     }
 
